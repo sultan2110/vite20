@@ -1,0 +1,13 @@
+.Navbar{
+    background-color: green;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: flex;   
+    justify-content: space-between; 
+}
+
+.bayram{
+    display: flex;
+    
+}

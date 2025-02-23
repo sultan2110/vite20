@@ -1,0 +1,67 @@
+.home{
+    display: flex;
+    min-height: 100vh;
+    background-color: orange;
+
+}
+
+.main{
+    width: 80%;
+    background-color: yellow;
+    
+}
+
+.addandavto{
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    margin: 2px 0px;
+    height: 25px;
+    align-items: center;
+
+}
+
+.data{
+    display: flex;
+}
+
+.exelpdf{
+    display: flex;
+    border-collapse: collapse;
+    background-color: aliceblue;
+}
+.exelpdf span{
+    border: 0.5px solid black;
+    padding: 5px;
+    
+}
+
+.qollaw{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 8px;
+    
+}
+
+.cont{
+    background-color: beige;
+    padding: 5px;
+    margin: 2px 0px;
+}
+
+.qollawgo{
+    margin-left:10px;
+    background-color: blue;
+    color: #fff;
+    padding: 1px 10px;
+    height: 10px;
+    line-height: 10px;
+    border-radius: 5px;
+}

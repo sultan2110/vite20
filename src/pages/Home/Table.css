@@ -1,0 +1,46 @@
+.table-wrapper{
+    width: 100;
+}
+
+.table{
+    background-color: aliceblue;
+    border-collapse: collapse;
+}
+
+.table thead{
+    background-color: #ccc;
+    color: black;
+}
+
+.table td, th{
+    padding: 0.8rem;
+}
+
+.table td{
+    border-top: 0.5px solid #777;
+    border-bottom: 0.5px solid #777;
+}
+
+.expand{
+    width: 100%;
+    text-align: left;
+}
+
+.label{
+    border-radius: 5px;
+    padding: 0.3rem;
+    color: #fff;
+}
+
+.label-live{
+    background-color: green;
+} 
+
+.action{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-btn{
+    color: red;
+}
