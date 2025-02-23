@@ -2,7 +2,7 @@ import React from "react";
 import { BsFillTrashFill, BsFillPencilFill } from "react-icons/bs";
 import "./table.css";
 
-function Table({ rows, deleterow, editrow }) {
+function Table({ rows, deleterow, editrow, modalOpen, setModalOpen }) {
   return (
     <div className="table-wrapper">
       <table className="table">
@@ -39,6 +39,24 @@ function Table({ rows, deleterow, editrow }) {
                 <td>
                   <span className={`label label-${row.status}`}>
                     {row.status}
+                  </span>
+                </td>
+                <td>
+                  <span
+                    onClick={() =>
+                      setModalOpen({ value: true, type: "kunyakuni" })
+                    }
+                  >
+                    Kun yakuni
+                  </span>
+                </td>
+                <td>
+                  <span
+                    onClick={() =>
+                      setModalOpen({ value: true, type: "zapravka" })
+                    }
+                  >
+                    Zapravka
                   </span>
                 </td>
                 <td>

@@ -7,7 +7,10 @@ import { BsTaxiFront } from "react-icons/bs";
 import "./Home.css";
 
 function Home() {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState({
+    value: false,
+    type: "",
+  });
   const [rows, setRows] = useState([]);
 
   const handleDelete = () => {};
@@ -27,19 +30,23 @@ function Home() {
             </span>
           </div>
           <div>
-            <span onClick={() => setModalOpen(true)}>Ertalabki</span>
-          </div>
-          <div>
-            <span onClick={() => setModalOpen(true)}>Kun yakuni</span>
-          </div>
-          <div>
-            <span onClick={() => setModalOpen(true)}>Zapravka</span>
+            <span
+              onClick={() => setModalOpen({ value: true, type: "ertalabki" })}
+            >
+              Ertalabki
+            </span>
           </div>
         </div>
 
-        <Table rows={rows} deleteRow={handleDelete} editRow={handleRowEdit} />
+        <Table
+          rows={rows}
+          deleteRow={handleDelete}
+          editRow={handleRowEdit}
+          modalOpen={modalOpen}
+          setModalOpen={setModalOpen}
+        />
 
-        {modalOpen && (
+        {modalOpen.value && (
           <Modal
             closeModal={setModalOpen}
             rows={rows}
